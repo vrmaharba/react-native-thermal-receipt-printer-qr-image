@@ -3,12 +3,13 @@
 Fork of `react-native-thermal-receipt-printer`, implement auto connect printer with usb
 A React Native Library to support USB/BLE/Net printer, and the implementation of functions added in the following library: [react-native-thermal-receipt-printer-image-qr](https://github.com/thiendangit/react-native-thermal-receipt-printer-image-qr) (Library with some bugs).
 
-![Node.js Package](https://github.com/HeligPfleigh/react-native-thermal-receipt-printer/workflows/Node.js%20Package/badge.svg)
+![Node.js Package](https://github.com/vrmaharba/react-native-thermal-receipt-printer-qr-image/workflows/Node.js%20Package/badge.svg)
 
 ## Installation
 
 ```
 yarn add react-native-thermal-receipt-printer
+yarn add react-native-ping
 ```
 
 ## Troubleshoot
@@ -40,6 +41,15 @@ _Podfile_
 
 and comment out code related to Flipper in `ios/AppDelegate.m`
 
+| Implement    | Android            | IOS                |
+| ---------- | ------------------ | ------------------ |
+| Image & QR (URL & Base64) | :heavy_check_mark: | :heavy_check_mark: |
+| Fix cut | :heavy_check_mark: | :heavy_check_mark: |
+| Print With Column | :heavy_check_mark: | :heavy_check_mark: |
+| NET Connect Timeout | :heavy_check_mark: | :heavy_check_mark: |
+
+:grey_exclamation:**`Print Image & QR with bluetooth in IOS just implement not tested yet`**
+
 ## Support
 
 | Printer    | Android            | IOS                |
@@ -48,16 +58,11 @@ and comment out code related to Flipper in `ios/AppDelegate.m`
 | BLEPrinter | :heavy_check_mark: | :heavy_check_mark: |
 | NetPrinter | :heavy_check_mark: | :heavy_check_mark: |
 
-## Predefined tag
-| Tags          | Description           |
-|:-------------:|:---------------------:|
-| C             | Center                |
-| D             | Medium font           |
-| B             | Large font            |
-| M             | Medium font           |
-| CM            | Medium font, centered |
-| CB            | Medium font, centered |
-| CD            | Large font, centered  |
+<br />
+<div style="display: flex; flex-direction: row; align-self: center; align-items: center">
+<img src="image/invoice.jpg" alt="bill" width="270" height="580"/>
+<img src="image/_screenshot.jpg" alt="screenshot" width="270" height="580"/>
+</div>
 
 ## Development workflow
 
